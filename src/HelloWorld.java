@@ -22,7 +22,15 @@ public class HelloWorld {
 //        float myNumber;
         double  myNumber;
         myNumber = 3.14;
-        System.out.println(myNumber);
+//        System.out.println(myNumber);
+
+//        casting from double to float:
+
+        float myNewNumber;
+        myNewNumber = (float) myNumber;
+        System.out.println(myNewNumber);
+
+
 
 //        int x = 5;
 //        System.out.println(x++);
