@@ -17,8 +17,11 @@ public class HelloWorld {
 //        System.out.println(myNumber);
 
 //        myNumber = 3.14;
-//        myNumber = 123L;
-//        myNumber =123;
+//    forcing number to a long:
+//       long myNumber = 123L;
+//    forcing number to be a float:
+//      float myNumber = 123F;
+
 //        float myNumber;
         double  myNumber;
         myNumber = 3.14;
