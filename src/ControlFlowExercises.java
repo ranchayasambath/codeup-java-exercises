@@ -71,7 +71,7 @@ public class ControlFlowExercises {
 //        4./bonus
         int x = 0;
         while (choice.equalsIgnoreCase("y")) {
-            System.out.println("Entre a numeric grade between 0 and 100: ");
+            System.out.print("Entre a numeric grade between 0 and 100: ");
             x = scanner.nextInt();
             if (x >= 0 && x <= 100)
                 if (x <= 100 && x >= 96) {
@@ -95,7 +95,7 @@ public class ControlFlowExercises {
                 } else if (x <= 59 && x >= 0) {
                     System.out.println("F");
                 }
-            System.out.print("\nContinue? (y/n): ");
+            System.out.print("Continue? (y/n): ");
             choice = scanner.next();
             System.out.println();
         }
