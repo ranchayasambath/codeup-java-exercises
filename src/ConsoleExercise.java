@@ -39,11 +39,11 @@ public class ConsoleExercise {
 //        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet.");
         //BONUS:
         System.out.print("Enter Length: ");
-        double input = Double.parseDouble(scanner.next());
+        double input = scanner.nextInt();
         System.out.print("Enter Width: ");
-        double input2 = Double.parseDouble(scanner.next());
+        double input2 = scanner.nextInt();
         System.out.print("Enter Height: ");
-        double input3 = Double.parseDouble(scanner.next());
+        double input3 = scanner.nextInt();
 //        PARAMETER:
 //        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet.");
 ////        AREA:
