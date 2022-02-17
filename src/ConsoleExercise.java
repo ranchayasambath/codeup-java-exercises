@@ -45,13 +45,12 @@ public class ConsoleExercise {
         System.out.print("Enter Height: ");
         double input3 = scanner.nextInt();
 //        PARAMETER:
-//        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet.");
+        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet.");
 ////        AREA:
-//        System.out.println("Your classroom area is " + (input*input2) + " square feet.");
+        System.out.println("Your classroom area is " + (input*input2) + " square feet.");
 ////        VOLUME:
-//        System.out.println("Your classroom volume is " + (input*input2*input3) + " cubic feet.");
-//        ALL CALCULATIONS:
-        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet." + "\nYour classroom area is " + (input*input2) + " square feet." + "\nYour classroom volume is "  + (input*input2*input3) + " cubic feet.");
+        System.out.println("Your classroom volume is " + (input*input2*input3) + " cubic feet.");
+
 
 
 
