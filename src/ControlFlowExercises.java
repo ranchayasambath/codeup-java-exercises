@@ -2,13 +2,13 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
 //        int i = 5;
 //        while (i <= 15){
-//            System.out.println("the value of i is: " + i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
-        int count = 100;
+        long count = 2;
         do{
-            System.out.println("the value of i is: " + count);
-            count = count - 5;
-        }while(count >= -10);
+            System.out.println(count);
+            count *= count;
+        }while(count < 1000000);
     }
 }
