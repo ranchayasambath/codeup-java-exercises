@@ -51,7 +51,7 @@ public class ConsoleExercise {
 ////        VOLUME:
 //        System.out.println("Your classroom volume is " + (input*input2*input3) + " cubic feet.");
 //        ALL CALCULATIONS:
-        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet." + "\nYour classroom area is " + (input*input2) + "square feet." + "\nYour classroom volume is "  + (input*input2*input3) + " cubic feet.");
+        System.out.println("Your classroom parameter is " + (input+input2)*2 + " feet." + "\nYour classroom area is " + (input*input2) + " square feet." + "\nYour classroom volume is "  + (input*input2*input3) + " cubic feet.");
 
 
 
