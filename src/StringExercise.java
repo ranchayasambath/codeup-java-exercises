@@ -8,11 +8,17 @@ public class StringExercise {
 //        System.out.println(sayName("Jack"));
 
         //class exercise 2:
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter two numbers: ");
-        int input1 = sc.nextInt();
-        int input2 = sc.nextInt();
-        System.out.print(addNum(input1,input2));
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter two numbers: ");
+//        int input1 = sc.nextInt();
+//        int input2 = sc.nextInt();
+//        System.out.print(addNum(input1,input2));
+
+        //class exercise 3:
+//        System.out.println(addition());
+//        System.out.println(addClass(2,4));
+
+
 
 
 
@@ -46,22 +52,25 @@ public class StringExercise {
 //        String input = sc.nextLine();
 //         return "Hello, "+ input;
 //    }
-    public static int addNum (int num1, int num2){
-        int solution = num1 + num2;
-        return solution;
-    }
+
+    //class exercise 2:
+//    public static int addNum (int num1, int num2){
+//        int solution = num1 + num2;
+//        return solution;
+//    }
+    //class exercise 3:
+//    public static int addClass(int num1, int num2){
+//        int solution = num1 + num2;
+//        return solution;
+//    }
+//    public static int addition(){
+//        System.out.println("please enter two nums: ");
+//        Scanner sc = new Scanner(System.in);
+//        int first = sc.nextInt();
+//        int second = sc.nextInt();
+//        return first + second;
+//    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 //        2.
 //class bob{
