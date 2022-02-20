@@ -23,7 +23,7 @@ public class StringExercise {
 
 
 //        1.
-        //STORE VALUE= NOT REASSIGNING THE REFERENCE:
+        //STORE VALUE; NOT REASSIGNING THE REFERENCE:
 //        String string = "We don't need no education";
 ////        string = string.replace("education","thought control" );
 ////        string = string.replace("We don't need no education","Check \"this\" out!, \"s inside of \"s!");
