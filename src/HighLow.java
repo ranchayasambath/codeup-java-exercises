@@ -14,11 +14,16 @@ public class HighLow {
             while (guess != number) {
                 System.out.print("Enter your number 1 to 100: ");
                 guess = scanner.nextInt();
-                if (guess < number) {
+                if (guess <= 0 || guess > 100 ){
+                    System.out.println("invalid selection!");
+                }
+                else if (guess < number) {
                     System.out.println("Too low, please try again");
-                } else if (guess > number) {
+                }
+                else if (guess > number) {
                     System.out.println("Too high, please try again");
-                } else {
+                }
+                else {
                     System.out.println("Correct, the number was " + number);
                 }
             }
