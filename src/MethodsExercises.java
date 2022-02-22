@@ -20,7 +20,7 @@ public class MethodsExercises {
 //        factorial();
 //--------------------------------------------------------------------------
 //        4.
-        diceRoll(1);
+        diceRoll();
     }
 //--------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ public class MethodsExercises {
 //    }
 //--------------------------------------------------------------------------
     //        4.
-    public static void diceRoll(int num) {
+    public static void diceRoll() {
         System.out.print("How many sides are your dice?: ");
         Scanner sc = new Scanner(System.in);
         int diceSide = sc.nextInt();
