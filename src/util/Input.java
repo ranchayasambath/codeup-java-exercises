@@ -14,7 +14,7 @@ public class Input {
         System.out.print("Write a statement: ");
         return scanner.nextLine();
     }
-
+//-----------------------------------------------------------------------------------------------------
     public boolean yesNo() {
         System.out.print("Enter yes or y: ");
         String input = scanner.next();
