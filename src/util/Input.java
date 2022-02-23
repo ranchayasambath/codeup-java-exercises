@@ -27,11 +27,11 @@ public class Input {
     }
 //-----------------------------------------------------------------------------------------------------
     public int getInt(String prompt,int min ,int max){
-        System.out.print(prompt + "\nEnter an integer between "+ min + " and " + max + " : ");
+        System.out.printf(prompt + "\nEnter an integer between %s and %s : " ,min,max);
         int input = scanner.nextInt();
 
         while(min < input && input > max){
-            System.out.print(prompt + "\nEnter an integer between"+ min + " and " + max + " : ");
+            System.out.printf(prompt + "\nEnter an integer between %s and %s : " ,min,max);
             input = scanner.nextInt();
         }
         return input;
@@ -43,11 +43,11 @@ public class Input {
     }
 //-----------------------------------------------------------------------------------------------------
     public double getDouble(String prompt,double min ,double max){
-        System.out.print(prompt + "\nEnter a double between "+ min + " and " + max + " : ");
+        System.out.printf(prompt + "\nEnter an integer between %s and %s : ",min,max);
         double input = scanner.nextDouble();
 
         while(min < input && input > max){
-            System.out.print(prompt + "\nEnter a double between "+ min + " and " + max + " : ");
+            System.out.printf(prompt + "\nEnter an integer between %s and %s : ",min,max);
             input = scanner.nextDouble();
         }
         return input;
