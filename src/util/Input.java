@@ -11,49 +11,43 @@ public class Input {
     }
 //-----------------------------------------------------------------------------------------------------
     public String getString(String prompt) {
-        System.out.println(prompt);
-        System.out.print("Write a statement: ");
+        System.out.print(prompt + "\nWrite a statement: ");
         return scanner.nextLine();
     }
 //-----------------------------------------------------------------------------------------------------
     public boolean yesNo(String prompt) {
-        System.out.println(prompt);
-        System.out.print("Enter yes or y: ");
+        System.out.print(prompt + "\nEnter yes or y: ");
         String input = scanner.next();
         return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
     }
 //-----------------------------------------------------------------------------------------------------
     public int getInt(String prompt) {
-        System.out.println(prompt);
-        System.out.print("Enter an integer: ");
+        System.out.print(prompt+ "\nEnter an integer: ");
         return scanner.nextInt();
     }
 //-----------------------------------------------------------------------------------------------------
     public int getInt(String prompt,int min ,int max){
-        System.out.println(prompt);
-        System.out.println("Enter an integer between "+ min + " and " + max + " : ");
+        System.out.print(prompt + "\nEnter an integer between "+ min + " and " + max + " : ");
         int input = scanner.nextInt();
 
         while(min < input && input > max){
-            System.out.print("Enter an integer between"+ min + " and " + max + " : ");
+            System.out.print(prompt + "\nEnter an integer between"+ min + " and " + max + " : ");
             input = scanner.nextInt();
         }
         return input;
     }
 //-----------------------------------------------------------------------------------------------------
     public double getDouble(String prompt) {
-        System.out.println(prompt);
-        System.out.print("Enter a Double: ");
+        System.out.print(prompt + "\nEnter a Double: ");
         return scanner.nextDouble();
     }
 //-----------------------------------------------------------------------------------------------------
     public double getDouble(String prompt,double min ,double max){
-        System.out.println(prompt);
-        System.out.print("Enter a double between "+ min + " and " + max + " : ");
+        System.out.print(prompt + "\nEnter a double between "+ min + " and " + max + " : ");
         double input = scanner.nextDouble();
 
         while(min < input && input > max){
-            System.out.print("Enter a double between "+ min + " and " + max + " : ");
+            System.out.print(prompt + "\nEnter a double between "+ min + " and " + max + " : ");
             input = scanner.nextDouble();
         }
         return input;

@@ -6,7 +6,7 @@ public class InputTest{
         Input input = new Input();
 //        System.out.println(input.getString("Hello"));
 //-----------------------------------------------------------------------------------------------------
-//        System.out.println(input.yesNo("Hello));
+//        System.out.println(input.yesNo("Hello"));
 //-----------------------------------------------------------------------------------------------------
 //        System.out.println(input.getInt("Hello"));
 //-----------------------------------------------------------------------------------------------------
