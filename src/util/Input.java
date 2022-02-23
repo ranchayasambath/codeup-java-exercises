@@ -38,7 +38,7 @@ public class Input {
     }
 //-----------------------------------------------------------------------------------------------------
     public double getDouble(String prompt) {
-        System.out.print(prompt + "\nEnter a Double: ");
+        System.out.print(prompt + "\nEnter a number: ");
         return scanner.nextDouble();
     }
 //-----------------------------------------------------------------------------------------------------
