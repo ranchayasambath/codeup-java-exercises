@@ -9,32 +9,47 @@ public class Input {
 //When an instance of this object is created, the scanner field should be set to a new instance of the Scanner class.
          this.scanner = new Scanner(System.in);
     }
-
+//-----------------------------------------------------------------------------------------------------
     public String getString() {
         System.out.print("Write a statement: ");
         return scanner.nextLine();
     }
 
     public boolean yesNo() {
-        System.out.println("Enter yes or y: ");
+        System.out.print("Enter yes or y: ");
         String input = scanner.next();
         return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
-
     }
+//-----------------------------------------------------------------------------------------------------
+    public int getInt() {
+        System.out.print("Enter an integer: ");
+        return scanner.nextInt();
+    }
+//-----------------------------------------------------------------------------------------------------
     public int getInt(int min ,int max){
-//        System.out.println("Enter a number between"+ min + " and" + max);
+        System.out.print("Enter an integer between "+ min + " and " + max + " : ");
         int input = scanner.nextInt();
-        while(min < input || input > max){
-            System.out.println("Enter a number between"+ min + " and" + max);
-            input = scanner.nextInt();
-        }return input;
-    }
 
-    public double getInt(double min ,double max){
-        double input = scanner.nextInt();
-        while(min < input || input > max){
-            System.out.println("Enter a number between"+ min + " and" + max);
+        while(min < input && input > max){
+            System.out.print("Enter an integer between"+ min + " and " + max + " : ");
             input = scanner.nextInt();
-        }return input;
+        }
+        return input;
+    }
+//-----------------------------------------------------------------------------------------------------
+    public double getDouble() {
+        System.out.print("Enter a Double: ");
+        return scanner.nextDouble();
+    }
+//-----------------------------------------------------------------------------------------------------
+    public double getDouble(double min ,double max){
+        System.out.print("Enter a double between "+ min + " and " + max + " : ");
+        double input = scanner.nextDouble();
+
+        while(min < input && input > max){
+            System.out.print("Enter a double between "+ min + " and " + max + " : ");
+            input = scanner.nextDouble();
+        }
+        return input;
     }
 }
