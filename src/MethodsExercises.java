@@ -17,10 +17,10 @@ public class MethodsExercises {
 //        System.out.print("You've Entered: " + userInput + ".");
 //--------------------------------------------------------------------------
 //        3.
-//        factorial();
+        factorial();
 //--------------------------------------------------------------------------
 //        4.
-        diceRoll();
+//        diceRoll();
     }
 //--------------------------------------------------------------------------
 
@@ -74,28 +74,29 @@ public class MethodsExercises {
     }
 //--------------------------------------------------------------------------
 //    3.
-//    public static void factorial() {
-//        Scanner sc = new Scanner(System.in);
-//        String findFactorial = "y";
-//        while (true) {
-//            if (findFactorial.equalsIgnoreCase("n")) {
-//                System.out.println("Exiting..");
-//                return;
-//            }
-//            System.out.print("Please enter a number between 1 and 10: ");
-//            int input = getInteger(1,10);
-//            long storedFactorial = recursive(input);
-//            System.out.printf("%s!\t=\t%s%n", input, storedFactorial);
-//            System.out.print("Continue? (y/n): ");
-//            findFactorial = sc.next();
-//        }
-//    }
-//    public static int recursive(int num) {
-//        if (num == 1) {
-//            return 1;
-//        }
-//        return num * recursive(num - 1);
-//    }
+    public static void factorial() {
+        Scanner sc = new Scanner(System.in);
+        String findFactorial = "y";
+        boolean confirm = true;
+        while (confirm) {
+            if (findFactorial.equalsIgnoreCase("n")) {
+                System.out.println("See ya!");
+                return;
+            }
+            System.out.print("Please enter a number between 1 and 10: ");
+            int input = getInteger(1,10);
+            long storedFactorial = recursive(input);
+            System.out.printf("%s! = %s%n", input, storedFactorial);
+            System.out.print("Continue? (y/n): ");
+            findFactorial = sc.next();
+        }
+    }
+    public static int recursive(int num) {
+        if (num == 1) {
+            return 1;
+        }
+        return num * recursive(num - 1);
+    }
 //--------------------------------------------------------------------------
     //        4.
     public static void diceRoll() {
