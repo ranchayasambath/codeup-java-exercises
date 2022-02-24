@@ -12,7 +12,7 @@ public class CirclesApp {
         boolean confirm;
         do{
             Input input = new Input();
-            Circle newCircle = new Circle(input.getDouble("For Radius"));
+            Circle newCircle = new Circle(input.getDouble("For the value radius of a circle."));
             double area = newCircle.getArea();
             double circumference = newCircle.getCircumference();
             setCounter();
