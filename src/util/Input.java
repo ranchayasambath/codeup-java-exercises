@@ -47,7 +47,7 @@ public class Input {
         double input = scanner.nextDouble();
 
         while(min < input || input < max){
-            System.out.printf("\nRe-enter a number between %s and %s : ",min,max);
+            System.out.printf("Re-enter a number between %s and %s : ",min,max);
             input = scanner.nextDouble();
         }
         return input;
