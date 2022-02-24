@@ -1,20 +1,25 @@
 package shapes;
 import util.Input;
+
 public class CirclesApp {
+    private static int counter=0;
+
+    public static int setCounter(){
+         return counter++;
+    }
 
     public static void main(String[] args) {
-
-        Input scanner = new Input();
-
-        Circle cal = new Circle(scanner.getDouble("For radius"));
-
-        System.out.printf("Area: %f\nCircumference: %f\n", cal.getArea(), cal.getCircumference());
-
-        while (scanner.yesNo("Again? ")) {
-
-            cal = new Circle(scanner.getDouble("For radius"));
-            System.out.printf("Area: %f\nCircumference: %f\n", cal.getArea(), cal.getCircumference());
-        }
-        System.out.println("Exiting...");
+        boolean confirm;
+        do{
+            Input input = new Input();
+            Circle newCircle = new Circle(input.getDouble("For Radius"));
+            double area = newCircle.getArea();
+            double circumference = newCircle.getCircumference();
+            setCounter();
+            System.out.printf("Area is: %.3f.%n", area);
+            System.out.printf("Circumference is: %.3f.%n", circumference);
+            confirm = input.yesNo("Continue?");
+        }while (confirm);
+        System.out.printf("Created %s circle(s).",setCounter());
     }
 }
