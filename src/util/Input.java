@@ -30,7 +30,7 @@ public class Input {
         System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
         int input = scanner.nextInt();
 
-        while(min < input || input < max){
+        while(input < min || input > max){
             System.out.printf("Re-enter a number between %s and %s : " ,min,max);
              input = scanner.nextInt();
         }
@@ -46,7 +46,7 @@ public class Input {
         System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
         double input = scanner.nextDouble();
 
-        while(min < input || input < max){
+        while(input < min || input > max){
             System.out.printf("Re-enter a number between %s and %s : ",min,max);
             input = scanner.nextDouble();
         }
