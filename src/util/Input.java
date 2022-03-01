@@ -11,7 +11,7 @@ public class Input {
     }
 //-----------------------------------------------------------------------------------------------------
     public String getString(String prompt) {
-        System.out.print(prompt + "\nWrite a statement: ");
+        System.out.print(prompt + "\nEnter your choice: ");
         return scanner.nextLine();
     }
 //-----------------------------------------------------------------------------------------------------
@@ -52,4 +52,5 @@ public class Input {
         }
         return input;
     }
+
 }
