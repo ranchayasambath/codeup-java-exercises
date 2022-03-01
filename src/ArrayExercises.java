@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArrayExercises {
     public static void main(String[] args) {
-        //--------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
         // In-class warm-up exercise:
 
 //        Write a program that creates an array, and then prints the sum of the even and odd integers in a new array [sumOdd, sumEven]
@@ -12,26 +12,24 @@ public class ArrayExercises {
 //        5+1 = 6
 
         int[] warmup = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] oddEven = new int[2];
-        int odd = 0;
-        int even = 0;
-        for (int num : warmup) {
-            if (num % 2 == 0) {
-                even += num;
-            } else {
-                odd += num;
-            }
-        }
-        oddEven[0]= odd;
-        oddEven[1]= even;
-        System.out.println(Arrays.toString(oddEven));
+//        int[] oddEven = new int[2];
+//        int odd = 0;
+//        int even = 0;
+//        for (int num : warmup) {
+//            if (num % 2 == 0) {
+//                even += num;
+//            } else {
+//                odd += num;
+//            }
+//        }
+//        oddEven[0]= odd;
+//        oddEven[1]= even;
+//        System.out.println(Arrays.toString(oddEven));
 
 //--------------------- Calling method --------------------------------------------------------------------------------
         System.out.println(Arrays.toString(warmupMethod(warmup)));
 //---------------------------------------------------------------------------------------------------------------------
-
-
-//        1.
+//        1. Array Basics:
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 //        Person [] person = new Person[3];
@@ -44,9 +42,7 @@ public class ArrayExercises {
 //        }
         Person john = new Person("John");
         addPerson(person, john);
-
  }
-
     //accept Person Array object and Person object.
     public static void addPerson(Person[] person, Person nextPerson) {
         // Returning copy of original array +1;
@@ -75,7 +71,6 @@ public class ArrayExercises {
 //        System.out.println(Arrays.toString(oddEven));
         return oddEven;
     }
-//---------------------------------------------------------------------------------------------------------------------
     // in-class exercise:
 //    public static int sumAll(){
 //        int sum=0;
@@ -85,5 +80,6 @@ public class ArrayExercises {
 //        }
 //        return sum;
 //    }
+//---------------------------------------------------------------------------------------------------------------------
 
 }
