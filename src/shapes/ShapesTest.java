@@ -2,8 +2,8 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(4,5);
-        System.out.printf("Perimeter: %s.%nArea: %s. %n", box1.getPerimeter(), box1.getArea());
+//        Rectangle box1 = new Rectangle(4,5);
+//        System.out.printf("Perimeter: %s.%nArea: %s. %n", box1.getPerimeter(), box1.getArea());
 
 //        Rectangle box2 = new Square(5);
 //        System.out.printf("Perimeter: %s.%nArea: %s. %n", box2.getPerimeter(), box2.getArea());
@@ -22,6 +22,5 @@ public class ShapesTest {
 //   9.     Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
 //Because the interface method()"Measurable.java" created two dependency methods which must inherit to the inheritance, otherwise will trigger compiling error to each of those classes. In this case : class Rectangle and class Square.
 //    10.    What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
-//The square will run fine but rectangle will no cause this error:
-//"java: incompatible types: shapes.Square cannot be converted to shapes.Rectangle."
-// this is due to the implementation of interface method of "Measurable.java"
+//They will run as long as you inherit the instance of the class that calls for the variable to the right method. EX: public class Square extends Quadrilateral() will work with Quadrilateral box2 = new Square(5);
+//while leaving it in the original state of Rectangle box2 = new Square(5) will throw an error.
