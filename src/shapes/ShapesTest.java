@@ -20,7 +20,7 @@ public class ShapesTest {
 }
 //  8.  Answer the following questions:
 //   9.     Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
-//Because the interface method()"Measurable.java" created two dependency methods which must  inherit to the inheritance, otherwise will trigger compiling error ("getParameter and getArea") for both class Rectangle and class Square.
+//Because the interface method()"Measurable.java" created two dependency methods which must inherit to the inheritance, otherwise will trigger compiling error to each of those classes. In this case : class Rectangle and class Square.
 //    10.    What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
 //The square will run fine but rectangle will no cause this error:
 //"java: incompatible types: shapes.Square cannot be converted to shapes.Rectangle."

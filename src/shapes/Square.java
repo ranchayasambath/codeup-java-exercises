@@ -12,9 +12,9 @@ public class Square extends Quadrilateral {
     public double getPerimeter() {
         return 4*width;
     }
-    public double getArea() {
-        return Math.pow(width,2);
-    }
+//    public double getArea() {
+//        return Math.pow(width,2);
+//    }
     //SETTERS
     public void setLength() {
     }
