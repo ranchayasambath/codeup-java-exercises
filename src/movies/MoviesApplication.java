@@ -22,9 +22,9 @@ public class MoviesApplication {
                     System.out.println("Exiting...");
                     return;
                 case "1":
-                    System.out.println("All Films: ");
+                    System.out.println("All: ");
                     for (Movie movie : movies) {
-                        System.out.println(movie.getName()+" "+"--"+" "+movie.getCategory());
+                        System.out.print(movie.getName()+" "+"--"+" "+movie.getCategory()+".\t");
                     }
                     break;
                 case "2":
