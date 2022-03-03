@@ -38,23 +38,23 @@ public class Student{
     public ArrayList<Integer> gradesList( ) {
         return this.grades;
     }
-    public static void main(String[] args) {
-        Student student1= new Student("Jack");
-        Student student2= new Student("James");
-        student1.addGrade(100);
-        student1.addGrade(20);
-        student1.addGrade(60);
+    public static void main(String[] args){
+        Student jack= new Student("Jack");
+        Student james= new Student("James");
+        jack.addGrade(100);
+        jack.addGrade(20);
+        jack.addGrade(60);
 
-        student2.addGrade(0);
-        student2.addGrade(20);
-        student2.addGrade(30);
+        james.addGrade(0);
+        james.addGrade(20);
+        james.addGrade(30);
 
-        System.out.println(student1.totalGrades());
-        System.out.println(student1.gradesList());
-        System.out.printf("%s's grade is: %d.%n",student1.getName(),student1.getGradeAverage());
-
-        System.out.println(student2.totalGrades());
-        System.out.println(student2.gradesList());
-        System.out.printf("%s's grade is: %d.%n",student2.getName(),student2.getGradeAverage());
+        System.out.printf("%s's total grade is: %d.%n",jack.getName(),jack.totalGrades());
+        System.out.printf("%s's grades are: %s.%n",jack.getName(),jack.gradesList());
+        System.out.printf("%s's average grade is: %d.%n",jack.getName(),jack.getGradeAverage());
+        System.out.println("");
+        System.out.printf("%s's total grade is: %d.%n",james.getName(),james.totalGrades());
+        System.out.printf("%s's grades are: %s.%n",james.getName(),james.gradesList());
+        System.out.printf("%s's average grade is: %d.%n",james.getName(),james.getGradeAverage());
     }
 }
