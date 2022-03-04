@@ -5,22 +5,23 @@ public class Student{
     private String names;
     ArrayList<Integer> grades = new ArrayList<>();
 //constructor:
-    public Student(String studentNames){
-        this.names = studentNames;
+    public Student(String name){
+        this.names = name;
         this.grades = new ArrayList<>();
     }
-//methods:
+
+    //methods:
 // returns the student's name
     public String getName(){
             return this.names;
     }
     // adds the given grade to the grades property
-    public void addGrade(int grade){
-        grades.add(grade);
+    public void addGrade(double grade){
+        grades.add((int) grade);
     }
     // returns the average of the students grades
-    public int getGradeAverage(){
-        int sum=0;
+    public float getGradeAverage(){
+        float sum=0;
         for(int grade:grades){
             sum = sum + grade;
         }
@@ -51,10 +52,10 @@ public class Student{
 
         System.out.printf("%s's total grade is: %d.%n",jack.getName(),jack.totalGrades());
         System.out.printf("%s's grades are: %s.%n",jack.getName(),jack.gradesList());
-        System.out.printf("%s's average grade is: %d.%n",jack.getName(),jack.getGradeAverage());
+        System.out.printf("%s's average grade is: %.1f.%n",jack.getName(),jack.getGradeAverage());
         System.out.println("");
         System.out.printf("%s's total grade is: %d.%n",james.getName(),james.totalGrades());
         System.out.printf("%s's grades are: %s.%n",james.getName(),james.gradesList());
-        System.out.printf("%s's average grade is: %d.%n",james.getName(),james.getGradeAverage());
+        System.out.printf("%s's average grade is: %.1f.%n",james.getName(),james.getGradeAverage());
     }
 }
