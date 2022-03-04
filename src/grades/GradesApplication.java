@@ -17,9 +17,9 @@ public class GradesApplication {
         chris.addGrade(32.33);
         chris.addGrade(63.34);
         Student andrew = new Student("Andrew");
-        andrew.addGrade(20.11);
-        andrew.addGrade(81.33);
-        andrew.addGrade(79.22);
+        andrew.addGrade(20.56);
+        andrew.addGrade(42.43);
+        andrew.addGrade(39.22);
         Student henry = new Student("Henry");
         henry.addGrade(12.48);
         henry.addGrade(35.25);

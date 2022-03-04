@@ -1,27 +1,27 @@
 public class Person {
 
 //Create Person class inside of src that has a private name field that is a string,
-    private String Name;
+    private String name;
     //Create class that creates a new `Person` object to test
     public Person(String name){
-        this.Name = name;
+        this.name = name;
     }
 //-----------------------------------------------------------------------------
     public String getName(){
 //TODO: return the person's name
-        return this.Name;
+        return this.name;
     }
 //-----------------------------------------------------------------------------
     //The class should have a constructor that accepts a `String` value and sets the person's name to the passed string.
-    public void setName(String newName){
 //TODO: change the name field to the passed value
-        this.Name = newName;
-        this.sayHello();
+    public void setName(String newName){
+        this.name = newName;
+//        this.sayHello();
     }
 //-----------------------------------------------------------------------------
     public void sayHello(){
 //TODO: print a message to the console using the person's name
-        System.out.printf("Hello my name is %s\n",this.Name);
+        System.out.printf("Hello my name is %s\n",this.name);
     }
 //-----------------------------------------------------------------------------
     //Create a `main` method
