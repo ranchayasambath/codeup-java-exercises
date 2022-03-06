@@ -2,45 +2,44 @@ package groceryList;
 import grades.Student;
 import util.Input;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GroceryListApplication {
-    //PSEUDO:
-public static void grocery() {
-    Input input = new Input();
-    Boolean userConfirm = input.yesNo("Would you like to create a new list?\n");
-    while(true){
-        Input input2 = new Input();
-        String choices = input2.getString("Enter your selection: Meat || Dairy || Vegetables || Poultry");
-        switch(choices){
-            case "Meat":
-                System.out.println("meat department");
-                break;
-            case "Dairy":
-                System.out.println("dairy department");
-                break;
-            case "Vegetables":
-                System.out.println("vegetables department");
-                break;
-            case "Poultry":
-                System.out.println("poultry department");
-                break;
-            default:
-                System.out.println("invalid");
-            }
+    public static void main(String[] args) {
+        //collections of category
+        HashMap<String, String> grocery = new HashMap<>();
+        ArrayList<String> meat = new ArrayList<>();
+        ArrayList<String> dairy = new ArrayList<>();
+        ArrayList<String> vegetables = new ArrayList<>();
+        ArrayList<String> poultry = new ArrayList<>();
+        Input input = new Input();
+        Boolean userConfirm = input.yesNo("Would you like to create a new list?\n");
+        if (userConfirm) {
+                boolean enterNewItem = input.yesNo("Enter new item?\n");
+                while(enterNewItem){
+                    // request category from user.
+                    int userCategory = input.getInt("1. Meat" +
+                            "2.Dairy" +
+                            "3.Vegetables" +
+                            "4.Poultry",1,4);
+                    //request item's name
+                    String itemName = input.getString("Enter item name: ");
+
+                    //request quantity
+                    int itemAmount = input.getInt("Enter quantity of item: ");
+
+                    //create or add new item
+//                    if(grocery.containsKey(itemName)){
+//                        String currentItem = grocery.get(itemName);
+//                        currentItem.setQuaniti
+//                    }
+
+
+
+                }
         }
     }
-
-
-
-    public static void category() {
-        HashMap<String, String> items = new HashMap<>();
-        Input input = new Input();
-        String choice = input.getString("Select the category: ");
-    }
-
-    public static void main(String[] args) {
-    grocery();
-
-    }
 }
+
+
