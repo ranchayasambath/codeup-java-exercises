@@ -9,22 +9,48 @@ public class Input {
 //When an instance of this object is created, the scanner field should be set to a new instance of the Scanner class.
          this.scanner = new Scanner(System.in);
     }
+
+//-----------------------------------------------------------------------------------------------------
+    public String getString(){
+        return scanner.nextLine();
+    }
 //-----------------------------------------------------------------------------------------------------
     public String getString(String prompt) {
         System.out.print(prompt + "\nEnter your choice: ");
         return scanner.nextLine();
     }
 //-----------------------------------------------------------------------------------------------------
+public boolean yesNo( ) {
+    System.out.print("\nEnter yes or no: ");
+    String input = scanner.next();
+    return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
+}
+//-----------------------------------------------------------------------------------------------------
     public boolean yesNo(String prompt) {
-        System.out.print(prompt + "\nEnter yes or y: ");
+        System.out.print(prompt + "\nEnter yes or no: ");
         String input = scanner.next();
         return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
     }
 //-----------------------------------------------------------------------------------------------------
+public int getInt() {
+//    System.out.print("\nEnter a number: ");
+    return scanner.nextInt();
+}
+//-----------------------------------------------------------------------------------------------------
     public int getInt(String prompt) {
-        System.out.print(prompt+ "\nEnter an integer: ");
+        System.out.print(prompt+ "\nEnter a number: ");
         return scanner.nextInt();
     }
+//-----------------------------------------------------------------------------------------------------
+public int getInt(int min ,int max){
+    int input = scanner.nextInt();
+
+    while(input < min || input > max){
+        System.out.printf("Re-enter a number between %s and %s : " ,min,max);
+        input = scanner.nextInt();
+    }
+    return input;
+}
 //-----------------------------------------------------------------------------------------------------
     public int getInt(String prompt,int min ,int max){
         System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
@@ -36,6 +62,11 @@ public class Input {
         }
         return input;
     }
+//-----------------------------------------------------------------------------------------------------
+public double getDouble() {
+    System.out.print("\nEnter a number: ");
+    return scanner.nextDouble();
+}
 //-----------------------------------------------------------------------------------------------------
     public double getDouble(String prompt) {
         System.out.print(prompt + "\nEnter a number: ");

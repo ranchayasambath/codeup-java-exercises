@@ -3,7 +3,6 @@ import java.util.HashMap;
 import util.Input;
 //2.Create a map for students and GitHub usernames
 public class GradesApplication {
-
     public static void main(String[] args) {
         // We'll start by defining a hash map
         HashMap<String, Student> students = new HashMap<>();
