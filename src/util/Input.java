@@ -13,6 +13,7 @@ public class Input {
 //-----------------------------------------------------------------------------------------------------
     public String getString(){
         return scanner.nextLine();
+
     }
 //-----------------------------------------------------------------------------------------------------
     public String getString(String prompt) {
@@ -33,54 +34,135 @@ public boolean yesNo( ) {
     }
 //-----------------------------------------------------------------------------------------------------
 public int getInt() {
-//    System.out.print("\nEnter a number: ");
-    return scanner.nextInt();
-}
-//-----------------------------------------------------------------------------------------------------
-    public int getInt(String prompt) {
-        System.out.print(prompt+ "\nEnter a number: ");
-        return scanner.nextInt();
-    }
-//-----------------------------------------------------------------------------------------------------
-public int getInt(int min ,int max){
-    int input = scanner.nextInt();
-
-    while(input < min || input > max){
-        System.out.printf("Re-enter a number between %s and %s : " ,min,max);
-        input = scanner.nextInt();
-    }
-    return input;
-}
-//-----------------------------------------------------------------------------------------------------
-    public int getInt(String prompt,int min ,int max){
-        System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
-        int input = scanner.nextInt();
-
-        while(input < min || input > max){
-            System.out.printf("Re-enter a number between %s and %s : " ,min,max);
-             input = scanner.nextInt();
-        }
-        return input;
-    }
-//-----------------------------------------------------------------------------------------------------
-public double getDouble() {
     System.out.print("\nEnter a number: ");
-    return scanner.nextDouble();
+    String input= scanner.nextLine();
+    try{
+        return Integer.parseInt(input);
+    }catch(NumberFormatException e){
+        System.out.println("Not a number!");
+    }
+    return getInt();
 }
 //-----------------------------------------------------------------------------------------------------
-    public double getDouble(String prompt) {
-        System.out.print(prompt + "\nEnter a number: ");
-        return scanner.nextDouble();
+//    public int getInt(String prompt) {
+//        System.out.print(prompt+ "\nEnter a number: ");
+//        return scanner.nextInt();
+//    }
+//-----------------------------------------------------------------------------------------------------
+public int getInt(int min ,int max) {
+    System.out.printf("\nEnter a number between %s and %s : ", min, max);
+    String userInput = scanner.nextLine();
+    try {
+        int input = Integer.parseInt(userInput);
+        if (input >= min && input <= max)
+        return input;
+    } catch (NumberFormatException e) {
+        System.out.println("Not number.");
+    }
+    return getInt( min, max);
+}
+//-----------------------------------------------------------------------------------------------------
+//public int getInt(int min ,int max){
+//    int input = scanner.nextInt();
+//
+//    while(input < min || input > max){
+//        System.out.printf("Re-enter a number between %s and %s : " ,min,max);
+//        input = scanner.nextInt();
+//    }
+//    return input;
+//}
+//-----------------------------------------------------------------------------------------------------
+public int getInt(String prompt,int min ,int max) {
+    System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
+    String userInput = scanner.nextLine();
+    try {
+        int input = Integer.parseInt(userInput);
+        if (input >= min && input <= max)
+            return input;
+    } catch (NumberFormatException e) {
+        System.out.println("Not number.");
+    }
+    return getInt( min, max);
+}
+//-----------------------------------------------------------------------------------------------------
+//    public int getInt(String prompt,int min ,int max){
+//        System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
+//        int input = scanner.nextInt();
+//
+//        while(input < min || input > max){
+//            System.out.printf("Re-enter a number between %s and %s : " ,min,max);
+//             input = scanner.nextInt();
+//        }
+//        return input;
+//    }
+//-----------------------------------------------------------------------------------------------------
+    public double getDouble() {
+        System.out.print("\nEnter a number: ");
+        String input= scanner.nextLine();
+        try{
+            return Double.parseDouble(input);
+        }catch(NumberFormatException e){
+            System.out.println("Not a number!");
+        }
+        return getInt();
     }
 //-----------------------------------------------------------------------------------------------------
-    public double getDouble(String prompt,double min ,double max){
-        System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
-        double input = scanner.nextDouble();
-
-        while(input < min || input > max){
-            System.out.printf("Re-enter a number between %s and %s : ",min,max);
-            input = scanner.nextDouble();
-        }
-        return input;
+//public double getDouble() {
+//    System.out.print("\nEnter a number: ");
+//    return scanner.nextDouble();
+//}
+//-----------------------------------------------------------------------------------------------------
+public double getDouble(String prompt) {
+    System.out.print(prompt + "\nEnter a number between %s and %s : ");
+    String input= scanner.nextLine();
+    try{
+        return Double.parseDouble(input);
+    }catch(NumberFormatException e){
+        System.out.println("Not a number!");
     }
+    return getInt();
+}
+//-----------------------------------------------------------------------------------------------------
+//    public double getDouble(String prompt) {
+//        System.out.print(prompt + "\nEnter a number: ");
+//        return scanner.nextDouble();
+//    }
+//-----------------------------------------------------------------------------------------------------
+public double getDouble(double min ,double max) {
+    System.out.printf("\nEnter a number between %s and %s : ",min,max);
+    String userInput = scanner.nextLine();
+    try {
+        double input = Double.parseDouble(userInput);
+        if (input >= min && input <= max)
+            return input;
+    } catch (NumberFormatException e) {
+        System.out.println("Not number.");
+    }
+    return getDouble(min,max);
+}
+//-----------------------------------------------------------------------------------------------------
+public double getDouble(String prompt,double min ,double max) {
+    System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
+    String userInput = scanner.nextLine();
+    try {
+        double input = Double.parseDouble(userInput);
+        if (input >= min && input <= max)
+            return input;
+    } catch (NumberFormatException e) {
+        System.out.println("Not number.");
+    }
+    return getDouble(min,max);
+}
+
+//-----------------------------------------------------------------------------------------------------
+//    public double getDouble(String prompt,double min ,double max){
+//        System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
+//        double input = scanner.nextDouble();
+//
+//        while(input < min || input > max){
+//            System.out.printf("Re-enter a number between %s and %s : ",min,max);
+//            input = scanner.nextDouble();
+//        }
+//        return input;
+//    }
 }
