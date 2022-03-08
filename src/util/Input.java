@@ -153,7 +153,30 @@ public double getDouble(String prompt,double min ,double max) {
     }
     return getDouble(min,max);
 }
-
+//-----------------------------------------------------------------------------------------------------
+public int getBinary() {
+    System.out.print("\nEnter a Binary number: ");
+    String input= scanner.next();
+    try{
+//        System.out.printf("Your Binary number is: %s.",Integer.parseInt(input,2));
+        return Integer.parseInt(input,2);
+    }catch(NumberFormatException e){
+        System.out.println("Not a Binary!");
+    }
+    return getBinary();
+}
+//-----------------------------------------------------------------------------------------------------
+public int getHexadecimal() {
+    System.out.print("\nEnter a Hexadecimal number: ");
+    String input= scanner.next();
+    try{
+//        System.out.printf("Your Hexadecimal number is: %s.",Integer.parseInt(input,16));
+        return Integer.parseInt(input,16);
+    }catch(NumberFormatException e){
+        System.out.println("Not a Hexadecimal!");
+    }
+    return getBinary();
+}
 //-----------------------------------------------------------------------------------------------------
 //    public double getDouble(String prompt,double min ,double max){
 //        System.out.printf(prompt + "\nEnter a number between %s and %s : ",min,max);
