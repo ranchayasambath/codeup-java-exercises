@@ -5,6 +5,8 @@ public class Practice {
         System.out.println(notString("cake"));
         System.out.println(notString("not bad"));
         System.out.println(diff21(10));
+        System.out.println(loneTeen(15,15));
+        System.out.println(loneTeen(15,12));
     }
     public static String notString(String str) {
         if (str.length() >= 3 && str.substring(0, 3).equals("not"))
@@ -17,5 +19,13 @@ public class Practice {
             return 2*(n-21);
         return 21-n;
     }
+//We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
+public static boolean loneTeen(int a, int b) {
+    boolean aTeen = (a >= 13 && a <= 19);
+    boolean bTeen = (b >= 13 && b <= 19);
+    return (aTeen && !bTeen) || (bTeen && !aTeen);
+}
+
+
 
 }
