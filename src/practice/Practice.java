@@ -10,6 +10,7 @@ public class Practice {
         System.out.println(fizzString("fib"));
         System.out.println(lessBy10(1,7,11));
         System.out.println(specialEleven(22));
+        System.out.println(delDel("adelbc"));
     }
     public static String notString(String str) {
         if (str.length() >= 3 && str.substring(0, 3).equals("not"))
@@ -44,6 +45,13 @@ public static boolean loneTeen(int a, int b) {
     }
     public static boolean specialEleven(int n) {
         return n >= 0 && (n % 11 == 0 || n % 11 == 1);
+    }
+
+    public static String delDel(String str) {
+        if (str.length()>=4 && str.substring(1,4).equals("del")){
+            return str.substring(0,1)+str.substring(4);
+        }
+        return str;
     }
 
 }
