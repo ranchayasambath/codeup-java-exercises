@@ -11,6 +11,7 @@ public class Practice {
         System.out.println(lessBy10(1,7,11));
         System.out.println(specialEleven(22));
         System.out.println(delDel("adelbc"));
+        System.out.println(fizzString2(3));
     }
     public static String notString(String str) {
         if (str.length() >= 3 && str.substring(0, 3).equals("not"))
@@ -53,5 +54,21 @@ public static boolean loneTeen(int a, int b) {
         }
         return str;
     }
+    public static String fizzString2(int n) {
+        if( n % 3 == 0 && n % 5 ==0){
+            return "FizzBuzz"+"!";
+        }
+        else if(n % 3 == 0){
+            return "Fizz"+"!";
+        }
+        else if( n % 5 == 0){
+            return "Buzz"+"!";
+        }
+        else{
+            return n + "!";
+        }
+
+    }
+
 
 }
