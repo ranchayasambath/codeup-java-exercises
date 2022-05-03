@@ -12,6 +12,7 @@ public class Practice {
         System.out.println(specialEleven(22));
         System.out.println(delDel("adelbc"));
         System.out.println(fizzString2(3));
+        System.out.println(lastDigit(23,19,13));
     }
     public static String notString(String str) {
         if (str.length() >= 3 && str.substring(0, 3).equals("not"))
@@ -67,7 +68,17 @@ public static boolean loneTeen(int a, int b) {
         else{
             return n + "!";
         }
-
+    }
+    public static boolean lastDigit(int a, int b, int c) {
+        int A = a % 10;
+        int B =b % 10;
+        int C = c % 10;
+        if(A== B || B == A || B ==C || C == A){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 
