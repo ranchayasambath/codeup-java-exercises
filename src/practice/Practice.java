@@ -1,4 +1,7 @@
 package practice;
+
+import java.util.Scanner;
+
 public class Practice {
 //Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
     public static void main(String[] args) {
@@ -13,6 +16,20 @@ public class Practice {
         System.out.println(delDel("adelbc"));
         System.out.println(fizzString2(3));
         System.out.println(lastDigit(23,19,13));
+
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        Double d = scan.nextDouble();
+        scan.nextLine();
+        String s = scan.nextLine();
+        scan.close();
+
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
     }
     public static String notString(String str) {
         if (str.length() >= 3 && str.substring(0, 3).equals("not"))
